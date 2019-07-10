@@ -10,7 +10,7 @@
 #include <netdb.h>
 
 #define MAX_CONN 16
-#define SERVER_PORT "8888"
+
 
 int open_socket(const char *addr, const char *port, const int sock_type);
 

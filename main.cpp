@@ -11,15 +11,16 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    if (argc != 2)
+    if (argc != 3)
     {
-        perror("Usage: ./main <local-ip-address>");
+        perror("Usage: ./main <local-ip-address> <port>");
         exit(1);
     }
-    int server_sock = open_socket(argv[1], SERVER_PORT, SOCK_STREAM), conn;
+    int server_sock = open_socket(argv[1], argv[2], SOCK_STREAM), conn;
     struct sockaddr_in client_addr;
     socklen_t client_addr_len = (socklen_t) sizeof(client_addr);
-    // polling-waiting for the incoming connection
+    // polling wait for the incoming connection
+    // assuming there is no concurrent connection in the experimental period
     while (1)
     {
         if((conn = accept(server_sock, (struct sockaddr *)&client_addr, &client_addr_len)) < 0)
@@ -27,8 +28,8 @@ int main(int argc, char **argv)
             perror("Error when accepting the client connection.");
             exit(1);
         }
-        cout << inet_ntoa(client_addr.sin_addr);
-        flush(cout);
+        cout << "Client " << inet_ntoa(client_addr.sin_addr) << " connected." << endl;
+        flush(cout); // accept will block the process
     }
     return 0;
 }
