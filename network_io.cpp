@@ -22,7 +22,7 @@ int open_socket(const char *addr, const char *port, const int sock_type)
 
     if ((status = getaddrinfo(addr, port, &hints, &results)) != 0)
     {
-        fprintf(stderr, "getaddrinfo: %s.\n", gai_strerror(status));
+        perror(strcat("getaddrinfo:",gai_strerror(status)));
         exit(1);
     }
 
