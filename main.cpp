@@ -9,10 +9,14 @@
 using namespace std;
 
 
-int main()
+int main(int argc, char **argv)
 {
-
-    int server_sock = open_socket("192.168.50.219", SERVER_PORT, SOCK_STREAM), conn;
+    if (argc != 2)
+    {
+        perror("Usage: ./main <local-ip-address>");
+        exit(1);
+    }
+    int server_sock = open_socket(argv[1], SERVER_PORT, SOCK_STREAM), conn;
     struct sockaddr_in client_addr;
     socklen_t client_addr_len = (socklen_t) sizeof(client_addr);
     // polling-waiting for the incoming connection
