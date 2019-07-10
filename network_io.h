@@ -13,5 +13,5 @@
 #define SERVER_PORT "8888"
 
 int open_socket(const char *addr, const char *port, const int sock_type);
-void readn(int )
+
 #endif //SECUREIMAGESEARCHMIDDLEBOX_NETWORK_IO_H
