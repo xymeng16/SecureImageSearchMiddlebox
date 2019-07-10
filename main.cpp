@@ -3,7 +3,7 @@
 //
 #include <iostream>
 #include <cstring>
-
+#include <arpa/inet.h>
 #include "network_io.h"
 
 using namespace std;
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
             perror("Error when accepting the client connection.");
             exit(1);
         }
-        cout << client_addr.sin_addr.s_addr;
+        cout << inet_ntoa(client_addr.sin_addr);
         flush(cout);
     }
     return 0;
