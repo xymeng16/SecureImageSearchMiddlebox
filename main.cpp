@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #include "network_io.h"
 #include "data_handler.h"
-
+#include "clustering.h"
 
 using namespace std;
 
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
         flush(cout); // accept call will block the process
         data_pack data;
         unpack(buf, uploadNum, &data, len);
-
+        int **t = get_dist_mat(data.a_hash, data.img_num, equ_dist); // auto-determine the template type
     }
     return 0;
 }

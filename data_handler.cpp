@@ -21,12 +21,13 @@ void unpack(byte *buf, int img_n, data_pack *data, int data_len)
 
     // Allocate memory
     data->img_num = img_n;
-    data->img_size = new short[img_n][2];
-    data->a_hash = new byte[img_n][LSH_L][DM_LEN];
-    data->p_hash = new byte[img_n][LSH_L][DM_LEN];
-    data->d_hash = new byte[img_n][LSH_L][DM_LEN];
+    data->img_size = new SIZE[img_n];
+//    data->a_hash = new byte[img_n][LSH_L][DM_LEN];
+    data->a_hash = new SHA256[img_n];
+    data->p_hash = new SHA256[img_n];
+    data->d_hash = new SHA256[img_n];
     data->img_aes_len = new int[img_n];
-    data->img_aes = new byte *[img_n];
+    data->img_aes = new AES[img_n];
 
 
     // extract img_size

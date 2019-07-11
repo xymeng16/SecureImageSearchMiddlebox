@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xymeng/Desktop/SecureImageSearchMiddlebox/main.cpp
+iostream
+-
+cstring
+-
+arpa/inet.h
+-
+network_io.h
+/home/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.h
+cstdio
+-
+
+/home/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.cpp
+network_io.h
+/home/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.h
+strings.h
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+climits
+-
+
+/home/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.h
+sys/socket.h
+-
+sys/types.h
+-
+netdb.h
+-
+
