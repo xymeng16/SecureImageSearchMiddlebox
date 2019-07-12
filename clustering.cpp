@@ -19,4 +19,3 @@ int equ_dist(SHA256 a, SHA256 b, int lsh_l, int dm_l)
 
     return dist;
 }
-
