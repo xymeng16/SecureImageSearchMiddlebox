@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/network_io.cpp.o CMakeFiles/main.dir/data_handler.cpp.o CMakeFiles/main.dir/clustering.cpp.o  -o main 
+/Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/network_io.cpp.o CMakeFiles/main.dir/data_handler.cpp.o CMakeFiles/main.dir/clustering.cpp.o  -o main 
