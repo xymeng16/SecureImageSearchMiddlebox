@@ -32,3 +32,4 @@
 *.app
 
 CMakeCache.txt
+CMakeFiles/

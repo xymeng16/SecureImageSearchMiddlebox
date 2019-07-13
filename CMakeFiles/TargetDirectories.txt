@@ -1,3 +1,0 @@
-/Users/xymeng/Desktop/SecureImageSearchMiddlebox/CMakeFiles/rebuild_cache.dir
-/Users/xymeng/Desktop/SecureImageSearchMiddlebox/CMakeFiles/edit_cache.dir
-/Users/xymeng/Desktop/SecureImageSearchMiddlebox/CMakeFiles/main.dir
