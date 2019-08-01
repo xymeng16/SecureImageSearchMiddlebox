@@ -8,6 +8,7 @@
 #include <cstring>
 #include <cassert>
 #include <netinet/in.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -38,6 +39,7 @@ void unpack(byte *buf, int img_n, data_pack *data, int data_len)
         buf += 4;
     }
 
+
     // extract hash value
     memcpy(data->a_hash, buf, img_n * LSH_L * DM_LEN);
     buf += img_n * LSH_L * DM_LEN;
@@ -64,4 +66,18 @@ void unpack(byte *buf, int img_n, data_pack *data, int data_len)
 
     // finished, check the buf cursor
     assert((buf - buf_head == data_len));
+}
+
+int dist(SHA256 a, SHA256 b, int lsh_l, int dm_l)
+{
+    int dist = 0;
+    for (int l = 0; l < lsh_l; l++)
+    {
+        if (memcmp(a[l], b[l], dm_l))
+        {
+            dist++;
+        }
+    }
+
+    return dist;
 }

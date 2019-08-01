@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xymeng/Desktop/SecureImageSearchMiddlebox
+CMAKE_SOURCE_DIR = /home/xiangyi/Desktop/SecureImageSearchMiddlebox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles /home/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles /home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+data_handler.o: data_handler.cpp.o
+
+.PHONY : data_handler.o
+
+# target to build an object file
+data_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/data_handler.cpp.o
+.PHONY : data_handler.cpp.o
+
+data_handler.i: data_handler.cpp.i
+
+.PHONY : data_handler.i
+
+# target to preprocess a source file
+data_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/data_handler.cpp.i
+.PHONY : data_handler.cpp.i
+
+data_handler.s: data_handler.cpp.s
+
+.PHONY : data_handler.s
+
+# target to generate assembly for a file
+data_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/data_handler.cpp.s
+.PHONY : data_handler.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,6 +204,33 @@ network_io.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/network_io.cpp.s
 .PHONY : network_io.cpp.s
 
+submodular.o: submodular.cpp.o
+
+.PHONY : submodular.o
+
+# target to build an object file
+submodular.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/submodular.cpp.o
+.PHONY : submodular.cpp.o
+
+submodular.i: submodular.cpp.i
+
+.PHONY : submodular.i
+
+# target to preprocess a source file
+submodular.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/submodular.cpp.i
+.PHONY : submodular.cpp.i
+
+submodular.s: submodular.cpp.s
+
+.PHONY : submodular.s
+
+# target to generate assembly for a file
+submodular.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/submodular.cpp.s
+.PHONY : submodular.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... data_handler.o"
+	@echo "... data_handler.i"
+	@echo "... data_handler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... network_io.o"
 	@echo "... network_io.i"
 	@echo "... network_io.s"
+	@echo "... submodular.o"
+	@echo "... submodular.i"
+	@echo "... submodular.s"
 .PHONY : help
 
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/network_io.cpp.o"
+  "CMakeFiles/main.dir/data_handler.cpp.o"
+  "CMakeFiles/main.dir/submodular.cpp.o"
   "main.pdb"
   "main"
 )

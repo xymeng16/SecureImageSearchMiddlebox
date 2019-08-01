@@ -25,4 +25,5 @@ struct data_pack
 };
 
 void unpack(byte *buf, int img_n, data_pack *data, int data_len);
+int dist(SHA256 a, SHA256 b, int lsh_l, int dm_l);
 #endif //SECUREIMAGESEARCHMIDDLEBOX_DATA_HANDLER_H
