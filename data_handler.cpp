@@ -73,7 +73,7 @@ int dist(SHA256 a, SHA256 b, int lsh_l, int dm_l)
     int dist = 0;
     for (int l = 0; l < lsh_l; l++)
     {
-        if (memcmp(a[l], b[l], dm_l))
+        if (!memcmp(a[l], b[l], dm_l))
         {
             dist++;
         }

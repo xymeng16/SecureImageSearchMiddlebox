@@ -4,108 +4,104 @@
 	<Project>
 		<Option title="SecureImageSearchMiddlebox"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="clang"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
+				<Option working_dir="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
+				<Option working_dir="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main">
-				<Option output="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main/fast">
-				<Option output="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
+				<Option working_dir="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/xiangyi/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xymeng/Desktop/SecureImageSearchMiddlebox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/data_handler.cpp">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/data_handler.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/data_handler.h">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/data_handler.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/main.cpp">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/main.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/network_io.cpp">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/network_io.h">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/network_io.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/submodular.cpp">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/submodular.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/submodular.h">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/submodular.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="/home/xiangyi/Desktop/SecureImageSearchMiddlebox/CMakeLists.txt">
+		<Unit filename="/Users/xymeng/Desktop/SecureImageSearchMiddlebox/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
